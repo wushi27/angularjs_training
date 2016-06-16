@@ -1,6 +1,7 @@
 ##有关angularjs的概述
 angularjs是一种单页面应用的解决方案。<br />
-<pre>
+```
+
     <!doctype html>
     <html lang="en" ng-app="memberCenter">
     <head>
@@ -15,8 +16,8 @@ angularjs是一种单页面应用的解决方案。<br />
         </div>
     </body>
     </html>
-</pre>
 
+```
 >module
 
 <pre>
