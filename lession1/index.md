@@ -2,7 +2,9 @@
 angularjs是一种单页面应用的解决方案。
 >module
 
+<pre>
  var appModule =  angular.module('memberCenter',[]);
+</pre>
 >controller
 
 <pre>
@@ -15,4 +17,46 @@ angularjs是一种单页面应用的解决方案。
     }
 
 });
+</pre>
+
+>directive
+
+<pre>
+appModule.directive('menuSlide',function(){
+    return {
+        restrict : "A",
+        link : function(scope , element , attr){
+            element.on("click",function(e) {
+                alert(e);
+
+            });
+        }
+    }
+});
+
+</pre>
+
+>service
+
+<pre>
+appModule.factory('getDataService',function($http){
+    return {
+        getData:function(url){
+            return url;
+        }
+    };
+
+});
+</pre>
+
+>filter
+
+<pre>
+
+appModule.filter('frozenStatusFilter',function(){
+     return function(input){
+          var obj = {'active':'正常','cancel':'撤销','creditLine':'冻结'};
+          return obj[input];
+         }
+     });
 </pre>
