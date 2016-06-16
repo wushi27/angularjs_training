@@ -1,5 +1,22 @@
 ##有关angularjs的概述
-angularjs是一种单页面应用的解决方案。
+angularjs是一种单页面应用的解决方案。<br />
+<pre>
+    <!doctype html>
+    <html lang="en" ng-app="memberCenter">
+    <head>
+        <meta charset="UTF-8">
+        <title>angularjs第一讲</title>
+    </head>
+    <body>
+        <div ng-controller="sidebarCtrl">
+            <div menu-slide>
+                <span>{{name | frozenStatusFilter:"active"}}</span>
+            </div>
+        </div>
+    </body>
+    </html>
+</pre>
+
 >module
 
 <pre>
@@ -14,6 +31,7 @@ angularjs是一种单页面应用的解决方案。
     $scope.func  = function(){
         alert($scope.name);
         alert(myName);
+        alert(sidebarService.getData('/menu/'));
     }
 
 });
