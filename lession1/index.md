@@ -4,7 +4,7 @@ angularjs是一种单页面应用的解决方案。
 
  var appModule =  angular.module('memberCenter',[]);
 >controller
-
+<code>
  appModule.controller('sidebarCtrl',function($scope,sidebarService){
     var myName = "小王";
     $scope.name = "小明";
@@ -14,3 +14,4 @@ angularjs是一种单页面应用的解决方案。
     }
 
 });
+</code>
