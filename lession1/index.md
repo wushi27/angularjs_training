@@ -1,5 +1,5 @@
 ##有关angularjs的概述
-angularjs是一种单页面应用的解决方案。<br />
+angularjs是一种单页面应用的解决方案。大体使用结构如下：<br />
 ```
 
     <!doctype html>
@@ -7,6 +7,8 @@ angularjs是一种单页面应用的解决方案。<br />
     <head>
         <meta charset="UTF-8">
         <title>angularjs第一讲</title>
+        <script src="jquery.js"></script>
+        <script src="angular.js"></script>
     </head>
     <body>
         <div ng-controller="sidebarCtrl">
