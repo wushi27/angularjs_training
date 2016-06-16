@@ -6,7 +6,7 @@ angularjs是一种单页面应用的解决方案。大体使用结构如下：<b
     <html lang="en" ng-app="memberCenter">
     <head>
         <meta charset="UTF-8">
-        <title>angularjs第一讲</title>
+        <title>angularjs第一课：概览</title>
         <script src="jquery.js"></script>
         <script src="angular.js"></script>
     </head>
