@@ -5,12 +5,14 @@ angularjs是一种单页面应用的解决方案。
  var appModule =  angular.module('memberCenter',[]);
 >controller
 
- appModule.controller('sidebarCtrl',function($scope,sidebarService){<br />
-    var myName = "小王";<br />
-    $scope.name = "小明";<br />
-    $scope.func  = function(){<br />
-        alert($scope.name);<br />
-        alert(myName);<br />
-    }<br />
+<pre>
+ appModule.controller('sidebarCtrl',function($scope,sidebarService){
+    var myName = "小王";
+    $scope.name = "小明";
+    $scope.func  = function(){
+        alert($scope.name);
+        alert(myName);
+    }
 
 });
+</pre>
