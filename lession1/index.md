@@ -1,5 +1,16 @@
-# 一级标题
+##有关angularjs的概述
+angularjs是一种单页面应用的解决方案。
+>module
 
-## 二级标题
+ var appModule =  angular.module('memberCenter',[]);
+>controller
 
-### 三级标题
+ appModule.controller('sidebarCtrl',function($scope,sidebarService){
+    var myName = "小王";
+    $scope.name = "小明";
+    $scope.func  = function(){
+        alert($scope.name);
+        alert(myName);
+    }
+
+});
